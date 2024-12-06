@@ -1,0 +1,37 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 1.5rem;
+}
+
+.text-gray-700 {
+    color: #4a4a4a;
+}
+
+.text-gray-600 {
+    color: #6b7280;
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid responsif */
+    gap: 1rem; /* Jarak antar gambar */
+    margin-top: 2rem;
+}
+
+.images-grid img {
+    width: 100%; /* Gambar memenuhi grid */
+    height: auto; /* Menjaga rasio gambar */
+    border-radius: 8px; /* Sudut gambar melengkung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transisi yang halus */
+}
+
+.images-grid img:hover {
+    transform: scale(1.1); /* Memperbesar gambar */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan lebih kuat */
+}
